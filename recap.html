@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recap Js Dom</title>
+  </head>
+  <body>
+    <!-- step 1 -->
+    <button onclick="document.body.style.background='red'">make Red</button>
+    <!-- step 2 -->
+    <button onclick="pinkColor()">Make Pink</button>
+    <!-- step 3 -->
+    <button id="make-orange">Make Orange</button>
+    <!-- step 3 -->
+    <button id="blue">Make Blue</button>
+    <!-- step 4 -->
+    <button id="make-goldenrod">Make Goldenrod</button>
+    <!-- step 4 -->
+    <button id="make-yellow">Make Yellow</button>
+    <!-- final  -->
+    <button id="make-green">Make Green</button>
+    <script>
+      // step 2
+      function pinkColor() {
+        document.body.style.background = "pink";
+      }
+      //   step 3
+      const makeOrange = document.getElementById("make-orange");
+      makeOrange.onclick = makeOrangeColor;
+      function makeOrangeColor() {
+        document.body.style.background = "orange";
+      }
+      //   step 3
+      const blueColor = document.getElementById("blue");
+      blueColor.onclick = function () {
+        document.body.style.background = "blue";
+      };
+      //   step 4
+      const goldenrod = document.getElementById("make-goldenrod");
+      goldenrod.addEventListener("click", goldenrodColor);
+      function goldenrodColor() {
+        document.body.style.background = "goldenrod";
+      }
+      //   step 4
+      const yellow = document.getElementById("make-yellow");
+      yellow.addEventListener("click", function () {
+        document.body.style.background = "yellow";
+      });
+      //   final
+      document
+        .getElementById("make-green")
+        .addEventListener("click", function () {
+          document.body.style.background = "green";
+        });
+    </script>
+  </body>
+</html>

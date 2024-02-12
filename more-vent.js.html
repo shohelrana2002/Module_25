@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Event Dom</title>
+  </head>
+  <body>
+    <h3 id="delete-p">Button Tiger</h3>
+    <button id="btn-delet">Click To Delete</button>
+    <br />
+    <br />
+    <input id="text-input" type="text" />
+    <script>
+      // document
+      //   .getElementById("text-input")
+      //   .addEventListener("focus", function () {
+      //     console.log("Event target In Out  ");
+      //   });
+
+      // document
+      //   .getElementById("text-input")
+      //   .addEventListener("blur", function () {
+      //     console.log("Event target In Blur  ");
+      //   });
+      // document
+      //   .getElementById("text-input")
+      //   .addEventListener("keydown", function (event) {
+      //     console.log(event.target.value);
+      //   });
+      // document
+      //   .getElementById("text-input")
+      //   .addEventListener("keyup", function (event) {
+      //     console.log(event.target.value);
+      //   });
+      // document
+      //   .getElementById("text-input")
+      //   .addEventListener("keypress", function (event) {
+      //     console.log(event.target.value);
+      //   });
+      document
+        .getElementById("text-input")
+        .addEventListener("keyup", function (event) {
+          console.log(event.target.value);
+        });
+      document
+        .getElementById("btn-delet")
+        .addEventListener("mouseenter", function () {
+          console.log("mouse tiger test");
+        });
+    </script>
+  </body>
+</html>

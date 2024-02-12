@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Text Update</title>
+  </head>
+  <body>
+    <!-- <h4 id="input-disply"></h4>
+    <input
+      id="update-text"
+      type="text"
+      style="margin-top: 50px"
+      placeholder="Input A Update Text"
+    />
+    <button id="update">Update Text</button>
+    <script>
+      document.getElementById("update").addEventListener("click", function () {
+        const updateText = document.getElementById("update-text");
+        const inputText = updateText.value;
+        const p = document.getElementById("input-disply");
+        p.innerText = inputText;
+        // input er text clear korar jono et
+        updateText.value = "";
+      });
+    </script> -->
+    <p id="p"></p>
+    <input id="input-text" type="text" />
+    <button id="update">update</button>
+    <script>
+      document.getElementById("update").addEventListener("click", function () {
+        const inputText = document.getElementById("input-text");
+        const inputUpdate = inputText.value;
+        const p = document.getElementById("p");
+        p.innerText = inputUpdate;
+        inputText.value = "";
+      });
+    </script>
+  </body>
+</html>

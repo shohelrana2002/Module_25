@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Even || Dom summary</title>
+  </head>
+  <body>
+    <h1>Final Event Dom Handlers</h1>
+    <h2 id="text-change">Default Text</h2>
+    <button onclick="clickTextChange()">Click To Change This Text</button>
+    <button id="text-update">Handle the Button</button>
+    <script>
+      function clickTextChange() {
+        const change = document.getElementById("text-change");
+        change.innerText = "Handle The Text in function";
+      }
+      document
+        .getElementById("text-update")
+        .addEventListener("click", function () {
+          const update = document.getElementById("text-change");
+          update.innerText = "update the text";
+        });
+    </script>
+  </body>
+</html>

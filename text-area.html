@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comment</title>
+  </head>
+  <body>
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt
+        minus in, eveniet numquam accusamus expedita voluptas sapiente ad
+        facilis?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt
+        minus in, eveniet numquam accusamus expedita voluptas sapiente ad
+        facilis?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt
+        minus in, eveniet numquam accusamus expedita voluptas sapiente ad
+        facilis?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt
+        minus in, eveniet numquam accusamus expedita voluptas sapiente ad
+        facilis?
+      </p>
+    </section>
+    <section id="add-new">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt
+        minus in, eveniet numquam accusamus expedita voluptas sapiente ad
+        facilis?
+      </p>
+    </section>
+    <br />
+    <textarea name="" id="text-comment" cols="30" rows="10"></textarea>
+    <button id="post">Post</button>
+    <script>
+      document.getElementById("post").addEventListener("click", function () {
+        const textComment = document.getElementById("text-comment");
+        const commentValue = textComment.value;
+        const addNew = document.getElementById("add-new");
+        const p = document.createElement("p");
+        p.innerText = commentValue;
+        addNew.appendChild(p);
+        textComment.value = "";
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-Area In Dom</title>
+  </head>
+  <style>
+    .item {
+      border: 2px solid tomato;
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <section class="item">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga optio
+        quisquam tempore, molestias beatae provident ratione? Adipisci illum
+        officia accusantium fugiat atque saepe. A, corrupti dignissimos expedita
+        ea nobis quisquam.
+      </p>
+    </section>
+    <section class="item">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga optio
+        quisquam tempore, molestias beatae provident ratione? Adipisci illum
+        officia accusantium fugiat atque saepe. A, corrupti dignissimos expedita
+        ea nobis quisquam.
+      </p>
+    </section>
+    <section class="item">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga optio
+        quisquam tempore, molestias beatae provident ratione? Adipisci illum
+        officia accusantium fugiat atque saepe. A, corrupti dignissimos expedita
+        ea nobis quisquam.
+      </p>
+    </section>
+    <section class="item">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga optio
+        quisquam tempore, molestias beatae provident ratione? Adipisci illum
+        officia accusantium fugiat atque saepe. A, corrupti dignissimos expedita
+        ea nobis quisquam.
+      </p>
+    </section>
+    <section class="item">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga optio
+        quisquam tempore, molestias beatae provident ratione? Adipisci illum
+        officia accusantium fugiat atque saepe. A, corrupti dignissimos expedita
+        ea nobis quisquam.
+      </p>
+    </section>
+    <section id="text-p" class="item">
+      <p></p>
+    </section>
+    <section>
+      <textarea name="" id="text-area" cols="30" rows="10"></textarea>
+      <button id="btn-submit">Submit</button>
+    </section>
+    <script>
+      document
+        .getElementById("btn-submit")
+        .addEventListener("click", function () {
+          const textArea = document.getElementById("text-area");
+          const valueTextArea = textArea.value;
+          const textbody = document.getElementById("text-p");
+          const P = document.createElement("p");
+          P.innerText = valueTextArea;
+          textbody.appendChild(P);
+          textArea.value = "";
+        });
+    </script>
+  </body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Text area</title>
+  </head>
+  <body>
+    <section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        recusandae soluta itaque laboriosam numquam quis voluptas harum. Saepe,
+        voluptate quisquam?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        recusandae soluta itaque laboriosam numquam quis voluptas harum. Saepe,
+        voluptate quisquam?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        recusandae soluta itaque laboriosam numquam quis voluptas harum. Saepe,
+        voluptate quisquam?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        recusandae soluta itaque laboriosam numquam quis voluptas harum. Saepe,
+        voluptate quisquam?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        recusandae soluta itaque laboriosam numquam quis voluptas harum. Saepe,
+        voluptate quisquam?
+      </p>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        recusandae soluta itaque laboriosam numquam quis voluptas harum. Saepe,
+        voluptate quisquam?
+      </p>
+    </section>
+    <section id="add-new">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+        recusandae soluta itaque laboriosam numquam quis voluptas harum. Saepe,
+        voluptate quisquam?
+      </p>
+    </section>
+    <br />
+    <textarea name="" id="comment" cols="30" rows="10"></textarea>
+    <button id="post">Post</button>
+
+    <script>
+      document.getElementById("post").addEventListener("click", function () {
+        const commentBox = document.getElementById("comment");
+        const commentValue = commentBox.value;
+        const newSection = document.getElementById("add-new");
+        const p = document.createElement("p");
+        p.innerText = commentValue;
+        newSection.appendChild(p);
+        commentBox.value = "";
+      });
+    </script>
+  </body>
+</html> -->

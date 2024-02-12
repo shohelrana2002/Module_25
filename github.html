@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Delete</title>
+  </head>
+  <body>
+    <section>
+      <h1 id="secret-info">Secret Info</h1>
+      <input id="confirm" type="text" placeholder="type a delete" />
+      <button id="btn-delete" disabled>Confirm</button>
+    </section>
+    <script>
+      document
+        .getElementById("confirm")
+        .addEventListener("keyup", function (event) {
+          const text = event.target.value;
+          const btn = document.getElementById("btn-delete");
+          if (text === "delete") {
+            btn.removeAttribute("disabled");
+          } else {
+            btn.setAttribute("disabled", true);
+          }
+        });
+      document
+        .getElementById("btn-delete")
+        .addEventListener("click", function () {
+          const secret = document.getElementById("secret-info");
+          secret.style.display = "none";
+        });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Git Hub</title>
+  </head>
+  <body>
+    <section>
+      <h2 id="secret-info">Secret Info</h2>
+      <input type="text" name="" id="delete-input" />
+      <button id="confirm" disabled>Confirm</button>
+    </section>
+    <script>
+      document
+        .getElementById("delete-input")
+        .addEventListener("keyup", function (event) {
+          const textConfirm = event.target.value;
+          const btn = document.getElementById("confirm");
+          if (textConfirm === "delete") {
+            btn.removeAttribute("disabled");
+          } else {
+            btn.setAttribute("disabled", true);
+          }
+        });
+      document.getElementById("confirm").addEventListener("click", function () {
+        const typeConfirm = document.getElementById("secret-info");
+        typeConfirm.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
